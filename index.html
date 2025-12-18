@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nidhi - Frontend Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Desktop Navigation -->
+  <nav id="desktop-nav">
+    <div class="logo">Nidhi</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Mobile Navigation -->
+  <nav id="hamburger-nav">
+    <div class="logo">Portfolio</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Profile Section -->
+  <section id="profile">
+    <div class="container">
+      <div class="profile-content">
+        <div class="profile-text">
+          <p class="section-subtitle">Hello, I'm</p>
+          <h1 class="hero-title">Nidhi</h1>
+          <p class="section-subtitle">Frontend Developer</p>
+          <div class="btn-group">
+            <a href="./assets/resume-example.pdf" class="btn btn-primary" download>Download CV</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+        </div>
+        <div class="profile-image">
+          <img src="./assets/portfolio1.jpg" alt="Nidhi profile picture" />
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/nidhi-j-647b5b353/" target="_blank">
+          <img src="./assets/linkedin.png" alt="LinkedIn" />
+        </a>
+        <a href="https://github.com/Nidhi1427" target="_blank">
+          <img src="./assets/github.png" alt="GitHub" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-desc">Get to know more about my journey</p>
+      </div>
+      <div class="about-content">
+        <div class="about-image">
+          <img src="./assets/portfolio1.jpg" alt="About picture" />
+        </div>
+        <div class="about-details">
+          <div class="stats-grid">
+            <div class="stat-card">
+              <img src="./assets/experience.png" alt="Experience" />
+              <h3>Experience</h3>
+              <p>2+ years<br>Frontend Development</p>
+            </div>
+            <div class="stat-card">
+              <img src="./assets/education.png" alt="Education" />
+              <h3>Education</h3>
+              <p>B.Tech<br>Computer Science</p>
+            </div>
+          </div>
+          <p class="about-text">
+            Passionate frontend developer with 2+ years of experience creating 
+            responsive, accessible web applications. Proficient in modern 
+            JavaScript frameworks and design systems.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Skills & Experience</h2>
+        <p class="section-desc">Technologies I work with</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <img src="./assets/checkmark.png" alt="HTML" />
+              <span>HTML5/CSS3 - Advanced</span>
+            </div>
+            <div class="skill-item">
+              <img src="./assets/checkmark.png" alt="CSS" />
+              <span>JavaScript ES6+ - Advanced</span>
+            </div>
+            <div class="skill-item">
+              <img src="./assets/checkmark.png" alt="SASS" />
+              <span>Tailwind CSS  - Intermediate</span>
+            </div>
+            <div class="skill-item">
+              <img src="./assets/checkmark.png" alt="SASS" />
+              <span>React  - Intermediate</span>
+            </div>
+            <div class="skill-item">
+              <img src="./assets/checkmark.png" alt="SASS" />
+              <span>Canvas API  - Intermediate</span>
+            </div>
+            <div class="skill-item">
+              <img src="./assets/checkmark.png" alt="JavaScript" />
+              <span>TypeScript - Intermediate</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Tools</h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <img src="./assets/checkmark.png" alt="Git" />
+              <span>Git/GitHub - Intermediate</span>
+            </div>
+            <div class="skill-item">
+              <img src="./assets/checkmark.png" alt="Node.js" />
+              <span>Node.js + npm  - Advanced</span>
+            </div>
+            <div class="skill-item">
+              <img src="./assets/checkmark.png" alt="Node.js" />
+              <span>NShadcn UI - Basic </span>
+            </div>
+            <div class="skill-item">
+              <img src="./assets/checkmark.png" alt="Node.js" />
+              <span>TanStack Query - Basic </span>
+            </div>
+            <div class="skill-item">
+              <img src="./assets/checkmark.png" alt="Figma" />
+              <span>Vite + React TS - Intermediate</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-desc">My recent work</p>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="./assets/weather_lightmode.png" alt="E-Commerce Dashboard" />
+          </div>
+          <div class="project-content">
+            <h3>Weather Website:Cl!m@te</h3>
+            <p>Real-time weather website with animated UI, forecasts, city search, and OpenWeatherMap API.</p>
+            <div class="project-buttons">
+              <a href="https://github.com/Nidhi1427/Weather" target="_blank" class="btn btn-primary">Code</a>
+              <a href="https://14degreeweather.netlify.app" target="_blank" class="btn btn-secondary">Live Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="./assets/FinApp_icon_logo.png" alt="Task Management App" />
+          </div>
+          <div class="project-content">
+            <h3>Financial App</h3>
+            <p>.</p>
+            <div class="project-buttons">
+              <a href="https://github.com/Nidhi1427/project2" target="_blank" class="btn btn-primary">Code</a>
+              <a href="https://nidhi-taskapp.netlify.app" target="_blank" class="btn btn-secondary">Live Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="./assets/machine.png" alt="Weather Dashboard" />
+          </div>
+          <div class="project-content">
+            <h3>Pong game website</h3>
+            <p>Interactive canvas game website with collision detection, physics, scoring, and sound effects.</p>
+            <div class="project-buttons">
+              <a href="https://github.com/Nidhi1427/PONG_attmept" target="_blank" class="btn btn-primary">Code</a>
+              <a href="https://nponggame.netlify.app/" target="_blank" class="btn btn-secondary">Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-desc">Let's work together</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <img src="./assets/email.png" alt="Email" />
+          <div>
+            <h3>Email</h3>
+            <p><a href="mailto:nidhi@gmail.com">nidhia1403@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <img src="./assets/linkedin.png" alt="LinkedIn" />
+          <div>
+            <h3>LinkedIn</h3>
+            <p><a href="https://www.linkedin.com/in/nidhi-j-647b5b353/" target="_blank">Profile</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Nidhi. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
